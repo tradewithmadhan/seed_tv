@@ -34,4 +34,4 @@ jobs:
       - name: Create PR
         run: |
           echo ${{ secrets.ACTION_TOKEN }} | gh auth login --with-token
-          gh api -X POST /repos/tradingview-pine-seeds/${{ github.event.repository.name }}/pulls -f base="master" -f head="${{ github.repository_owner }}:master" -f title="Update data"
+          gh api -X POST /repos/tradewithmadhan/${{ github.event.repository.name }}/pulls -f base="master" -f head="${{ github.repository_owner }}:master" -f title="Update data"
